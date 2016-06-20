@@ -51,6 +51,7 @@ void AVRinit()
 		// ADFR:	ADC Free Running Mode
 		// ADPS2-0:	Prescaler auf 128 setzten
 	// **********************************************************************************
+	
 }
 
 
