@@ -52,6 +52,12 @@ void AVRinit()
 		// ADPS2-0:	Prescaler auf 128 setzten
 	// **********************************************************************************
 	
+	// Interrupt Konfigurieren
+	// **********************************************************************************
+	GICR |= (1>>INT0);		// Global interrupt Control Register, INT0 wird freigeschalten
+	GIFR |= (1>>INTF0);		// Flankenerkennung
+	MCUCR |= (1>>ISC01);	// Welche Flanke (Fallende)
+	// **********************************************************************************
 }
 
 
